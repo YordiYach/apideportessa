@@ -49,7 +49,7 @@ router
  *            $ref: '#/components/schemas/Venta'
  *    responses:
  *      200:
- *        description: Venta realizada con éxito
+ *        description: Venta realizada con exito
  */
 .post("/", token.verifyToken, ventasController.newProductSale)
 

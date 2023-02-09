@@ -4,6 +4,8 @@ const stockRouter = require("./routes/stockRouter.js");
 const loginRouter = require("./routes/loginRouter");
 const ventasRouter = require("./routes/ventasRouter");
 const ingresosRouter = require("./routes/ingresosRouter");
+const marcasRouter = require('./routes/marcaRouter');
+const lineasRouter = require('./routes/lineaRouter');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -38,6 +40,8 @@ app.use("/api/stock", stockRouter);
 app.use("/api/login", loginRouter);
 app.use("/api/ingresos", ingresosRouter);
 app.use("/api/ventas", ventasRouter);
+app.use("/api/marcas", marcasRouter);
+app.use("/api/lineas", lineasRouter);
 
 //comprobation
 app.use((req, res, next) => {

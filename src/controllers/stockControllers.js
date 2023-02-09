@@ -10,7 +10,6 @@ const getProducts = (req, res, next) => {
         status: 200,
         message: "Productos obtenidos satisfactoriamente",
         productos: products,
-        Usuario: authData
       });
     }
   });
